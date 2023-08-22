@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physics Plugins Part 1: PhysicsProps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rotating input Dials: <span></span></h1>
+    <img
+      class="myImage"
+      src="https://assets.codepen.io/32887/circle-arrow-pink.svg"
+    />
+    <svg
+      version="1.1"
+      id="mySVG"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      viewBox="0 0 300 300"
+      style="enable-background: new 0 0 300 300"
+      xml:space="preserve"
+    >
+      <style type="text/css">
+        .st0 {
+          fill: #34ff33;
+        }
+
+        .st1 {
+          fill: none;
+          stroke: #0066cc;
+          stroke-width: 2;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+      </style>
+      <g id="dial">
+        <circle id="hitArea" class="st0" cx="150.4" cy="149.7" r="148" />
+        <g id="arrow" transform="matrix( 1, 0, 0, 1, 0,0) ">
+          <g>
+            <path
+              id="Layer0_0_1_STROKES"
+              class="st1"
+              d="M204.1,105.4l42.3,44.6l-42.3,44.6 M244.7,150H55.2"
+            />
+          </g>
+        </g>
+        <circle id="stroke" class="st1" cx="150" cy="150" r="148" />
+      </g>
+    </svg>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
